@@ -21,7 +21,9 @@ async function run(): Promise<void> {
         team_slug: 'owner-team'
       })
     core.info(`team members: ${teamMembers}`)
+    core.setOutput('here time', new Date().toTimeString())
   } catch (error) {
+    core.info('Got an error')
     if (error instanceof Error) core.setFailed(error.message)
   }
 }
