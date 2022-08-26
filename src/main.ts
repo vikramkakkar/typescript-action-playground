@@ -20,7 +20,7 @@ async function run(): Promise<void> {
         org: 'appeaser',
         team_slug: 'owner-team'
       })
-    core.debug(`team members: ${teamMembers}`)
+    core.info(`team members: ${teamMembers}`)
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }
