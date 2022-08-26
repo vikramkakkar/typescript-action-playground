@@ -14,7 +14,7 @@ async function run(): Promise<void> {
     core.setOutput('time', new Date().toTimeString())
 
     // const teams: string = 'owner-team'
-    const teamMembers = github
+    const teamMembers = await github
       .getOctokit('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')
       .rest.teams.getByName({
         org: 'appeaser',
