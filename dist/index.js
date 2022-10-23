@@ -9537,8 +9537,9 @@ function run() {
         
             core.setOutput('time', new Date().toTimeString())*/
             // const teams: string = 'owner-team'
+            const token = core.getInput('token');
             const teamMembers = yield github
-                .getOctokit('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')
+                .getOctokit(token)
                 .rest.teams.getByName({
                 org: 'appeaser',
                 team_slug: 'owner-team'
