@@ -3,6 +3,7 @@ import * as github from '@actions/github'
 // import {wait} from './wait'
 
 async function run(): Promise<void> {
+  console.log('running action...')
   try {
     /*const ms: string = core.getInput('milliseconds')
     core.debug(`Waiting ${ms} milliseconds ...`) // debug is only output if you set the secret `ACTIONS_STEP_DEBUG` to true
