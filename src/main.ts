@@ -23,7 +23,7 @@ async function run(): Promise<void> {
         team_slug: 'owner-team'
       })
     // team_slug: 'owner-team'
-    core.info(`team members: ${teamMembers}`)
+    core.info(`team members: ${JSON.stringify(teamMembers)}`)
     core.setOutput('here time', new Date().toTimeString())
   } catch (error) {
     core.info('Got an error')
