@@ -22,6 +22,7 @@ async function run(): Promise<void> {
         org: 'appeaser',
         team_slug: 'owner-team'
       })
+    // team_slug: 'owner-team'
     core.info(`team members: ${teamMembers}`)
     core.setOutput('here time', new Date().toTimeString())
   } catch (error) {
